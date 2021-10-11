@@ -51,13 +51,14 @@ The numerical data affirms the previous two boxplots. The students siting in the
 model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
-The p-value is very low indicating that the probability of these results occurring naturally without any influence or bias is extremely low. Such a p-value means that there are at least two rows in which the alcohol consumption is significantly different.
+The p-value is 0.000116 indicating that the probability of these results occurring naturally without any influence or bias is 0.116%. Such a p-value means that there are at least two rows in which the alcohol consumption is significantly different.
 
 ```{r}
 plot(TukeyHSD(model1))
 ```
+  
 According to the differences in mean levels, the back is drinking 12 to 4 more drinks than the front is. The back is drinking around 10 to 3 more drinks than the middle. The difference between the middle and front is nothing because the zero mark is inside the confidence level of the difference.
 
 ## Conclusions
 
-
+The problem was found to be a numerical~categorical problem. This incited me to upload the numerical~cat.rmd file. After looking at the various forms of data (boxplot, fancy boxplot, etc.), the obvious bias derived was that the back row significantly drank more than the the middle and front according to the mean average and deviation. Our p-value was significant and using a Tukey HSD test, we determined that the back row drank substantially more.
