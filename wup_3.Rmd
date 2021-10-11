@@ -36,7 +36,13 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+  The standard deviation of the date for those who sit in the back, is much greater than that of those who sit in the front or middle. The boxplot has distinct notches which vary from a conventional boxplot: these notches are indications of the standard deviation. The widely differing standard deviations indicate that the alcohol consumption of those who sit in the back varies much more than the data for the other locations. The median, and other characteristics of data are the same of the previous boxplot.
+  
 ## Numerical Summarys 
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
 
 ## Inferential Tests
 
