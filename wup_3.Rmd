@@ -43,6 +43,7 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```{r}
 favstats(alcohol~Seat,data=ucdavis1)
 ```
+The numerical data affirms the previous two boxplots. The students siting in the front drink an average of 1.7875 tims a week, students in the middle an average of 3.331461 times a week, and students in the back an average of 8.555... times a week. These demonstrate an increase in drinks from front to back. The standard deviation of those who sit in the back is 12.58 which dwarfs the other standard deviations of 3.8, and 6.22 for the front and middle. The variety in alcohol consumption increases from front to back, and the mean follows a similar trend.
 
 ## Inferential Tests
 
